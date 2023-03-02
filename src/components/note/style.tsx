@@ -39,10 +39,20 @@ export const StyledNote = styled.article`
             justify-content: center;
             gap: 8px;
             color: #6E951B;
+            background-color: #F0F0F0;
 
             span {
                 font-size: 20px;
             }
+
+            &:hover {
+                background-color: #E0E0E0;
+                transition: all .2s;
+            }
         }
+    }
+
+    .downloadable-content {
+        display: none;
     }
 `;

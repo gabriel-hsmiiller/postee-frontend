@@ -50,4 +50,38 @@ export const CSSReset = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
   }
+  body {
+
+    & > .downloadable-content {
+        margin-bottom: 40px;
+        font-size: 18px;
+        min-height: 320px;
+        width: 400px;
+        padding: 20px;
+        position: relative;
+
+        & > .body {
+            margin-bottom: 1rem;
+            word-break: break-word;
+            white-space: pre-wrap;
+            font-size: 32px;
+
+            & > .tag {
+                color: #6E951B;
+            }
+        }
+
+        & > .footer {
+            text-align: right;
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            color: #6E6E6E;
+
+            & > .link {
+              color: #6E951B;
+            }
+        }
+    }
+  }
 `;
