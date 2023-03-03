@@ -22,7 +22,7 @@ export class NotesService {
         download(dataURL, 'download.png', 'image/png');
     }
 
-    async upvote() {
-        // TODO: implement method
+    async upvoteNote(noteId: string) {
+        return axios.put(`${API_URL}/notes/${noteId}`);
     }
 }
